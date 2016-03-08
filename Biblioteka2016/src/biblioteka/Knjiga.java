@@ -59,13 +59,6 @@ public class Knjiga {
 	public void setIsbn(long isbn) {
 		this.isbn = isbn;
 	}
-	
-	public LinkedList<Autor> getAutori() {
-		return autori;
-	}
-	public void setAutori(LinkedList<Autor> autori) {
-		this.autori = autori;
-	}
 	public String getIzdavac() {
 		return izdavac;
 	}
