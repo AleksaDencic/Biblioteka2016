@@ -8,7 +8,7 @@ public class Biblioteka implements BibliotekaInterfejs {
 
 	private LinkedList<Knjiga> knjige = new LinkedList<Knjiga>();
 	
-	//Ja sam kralj!
+	//Ja sam kralj! 
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		if(knjiga==null || knjige.contains(knjiga))
@@ -18,6 +18,7 @@ public class Biblioteka implements BibliotekaInterfejs {
 
 	@Override
 	public void obrisiKnjigu(Knjiga knjiga) {
+		//Ipak car!
 		if(knjiga==null || !knjige.contains(knjiga))
 			throw new RuntimeException("Greska pri brisanju knjige");
 		knjige.remove(knjiga);
