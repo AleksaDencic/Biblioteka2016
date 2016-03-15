@@ -8,6 +8,7 @@ public class Biblioteka implements BibliotekaInterfejs {
 
 	private LinkedList<Knjiga> knjige = new LinkedList<Knjiga>();
 	
+	//Ja sam kralj!
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		knjige.add(knjiga);
