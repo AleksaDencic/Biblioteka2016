@@ -51,24 +51,32 @@ public class Knjiga {
 		return naslov;
 	}
 	public void setNaslov(String naslov) {
+		if(naslov.isEmpty() || naslov=="")
+			throw new RuntimeException("Morate uneti naslov knjige!");
 		this.naslov = naslov;
 	}
 	public long getIsbn() {
 		return isbn;
 	}
 	public void setIsbn(long isbn) {
+		if(isbn<=0)
+			throw new RuntimeException("ISBN mora biti veci od 0!");
 		this.isbn = isbn;
 	}
 	public String getIzdavac() {
 		return izdavac;
 	}
 	public void setIzdavac(String izdavac) {
+		if(izdavac.isEmpty() || izdavac=="")
+			throw new RuntimeException("Morate uneti izdavaca knjige!");
 		this.izdavac = izdavac;
 	}
 	public int getIzdanje() {
 		return izdanje;
 	}
 	public void setIzdanje(int izdanje) {
+		if(izdanje<=0)
+			throw new RuntimeException("Izdanje knjige mora biti vece od 0!");
 		this.izdanje = izdanje;
 	}
 	
