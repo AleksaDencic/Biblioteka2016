@@ -1,13 +1,38 @@
 package biblioteka;
-
+/**
+ * Ovo je dokumentovana klasa koja predstavlja
+ * autora neke knjige;
+ * @author Aleksa Dencic
+ * @version 1.0
+ *
+ */
 public class Autor {
-
+/**
+ * Ime autora
+ */
 	private String ime;
+	/**
+	 * Prezime autora
+	 */
 	private String prezime;
-
+/**
+ * Vraca ime autora
+ * @return ime autora
+ */
 	public String getIme() {
 		return ime;
 	}
+	
+	/**
+	 * Postavlja novu vrednost za atribut ime
+	 * @param nova vrednost za ime autora
+	 * @throws java.lang.RuntimeException ako je uneto ime
+	 * <ul>
+	 * 		<li>null</li>
+	 * 		<li>prazan String</li>
+	 * </ul>
+	 * <a href="http://www.w3schools.com/tags/tag_a.asp">HTML tag za dodavanje linka!</a>
+	 */
 	public void setIme(String ime) {
 		if (ime==null || ime.isEmpty())
 			throw new RuntimeException("Morate uneti ime!");
